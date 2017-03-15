@@ -1,0 +1,447 @@
+/* nav */
+/* Social colors */
+/* header */
+body {
+  width: 100%;
+  font-family: 'Hind', sans-serif;
+}
+body > * {
+  margin: 0 auto;
+}
+/* Media Query smarthphones */
+@media only screen and (max-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    height: 100px;
+  }
+  nav .right {
+    margin-right: 40px;
+  }
+  nav .left {
+    margin-left: 40px;
+  }
+  nav .left ul {
+    position: absolute;
+    top: 100px;
+    opacity: 0;
+    visibility: hidden;
+    left: 60px;
+    padding: 15px;
+    border: 1px solid black;
+    border-top: 0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,1b2a42+100&0.8+1,1+100 */
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 1, 0.8) 1%, #1b2a42 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 1, 0.8) 1%, #1b2a42 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 1, 0.8) 1%, #1b2a42 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc000000', endColorstr='#1b2a42', GradientType=0);
+    /* IE6-9 */
+  }
+  nav .left ul:hover {
+    visibility: visible;
+    opacity: 1;
+  }
+  nav .left ul li {
+    list-style: none;
+    margin: 10px 0;
+    transition: all 0.3s ease-in;
+  }
+  nav .left ul li:hover {
+    transform: translate(2px, 5px);
+  }
+  nav .left ul li:first-child {
+    margin-top: 0;
+  }
+  nav .left ul li:last-child {
+    margin-bottom: 0;
+  }
+  nav .left ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  nav .left i {
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+    line-height: 100px;
+    width: 50px;
+  }
+  nav .left i:hover + ul {
+    visibility: visible;
+    opacity: 1;
+  }
+  nav .right a {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: inline-block;
+    line-height: 40px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin: 30px 3px 0px 3px;
+    transition: all 0.5s ease-out;
+  }
+  nav .right a:hover {
+    transform: rotate(360deg);
+  }
+  nav .right a:nth-child(1) {
+    background-color: #3b5998;
+  }
+  nav .right a:nth-child(2) {
+    background-color: #00aced;
+  }
+  nav .right a:nth-child(3) {
+    background-color: #0077b5;
+  }
+  header {
+    background: url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    box-sizing: border-box;
+    padding-top: 180px;
+    padding-left: 30px;
+  }
+  header h1,
+  header h2,
+  header h3 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+  header h1 {
+    font-size: 30px;
+  }
+  header h2 {
+    font-size: 20px;
+  }
+  header h2:nth-child(2) {
+    margin-left: 50px;
+  }
+  section {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#071928+0,092332+100 */
+    background: #071928;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #071928 0%, #092332 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #071928 0%, #092332 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #071928 0%, #092332 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#071928', endColorstr='#092332', GradientType=0);
+    /* IE6-9 */
+    padding: 90px 0;
+  }
+  section.paginas div {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  section.paginas div article.pagina {
+    width: 70%;
+    margin: 30px 0;
+  }
+  section.paginas div article.pagina img {
+    width: 100%;
+  }
+  section.paginas div article.pagina p {
+    text-align: left;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  section.contacto {
+    padding: 250px 0;
+    font-weight: 700;
+    min-height: 100%;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  section.contacto .datos-contacto {
+    width: 70%;
+  }
+  section.contacto h2 {
+    font-size: 30px;
+  }
+  section.contacto h3 {
+    margin: 10px 0;
+    font-size: 15px;
+  }
+  section.contacto .form-contacto {
+    margin-top: 40px;
+    width: 70%;
+  }
+  section.contacto .form-contacto * {
+    margin: 15px 0;
+  }
+  section.contacto .form-contacto form {
+    width: 80%;
+  }
+  section.contacto .form-contacto form * {
+    display: block;
+  }
+  section.contacto .form-contacto form input[type="text"],
+  section.contacto .form-contacto form textarea {
+    width: 100%;
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  section.contacto .form-contacto form input[type="text"] {
+    height: 50px;
+  }
+  section.contacto .form-contacto form input[type="submit"] {
+    background-color: #1248567;
+    border: 1px solid black;
+    width: 200px;
+    padding: 10px;
+    font-size: 20px;
+  }
+  footer {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#061620+0,2b3b44+100 */
+    background: #061620;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #061620 0%, #2b3b44 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #061620 0%, #2b3b44 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #061620 0%, #2b3b44 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#061620', endColorstr='#2b3b44', GradientType=1);
+    /* IE6-9 */
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  footer p {
+    margin-right: 50px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 100px;
+  }
+}
+/* Media Query tablet & escritorio */
+@media only screen and (min-width: 769px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    height: 100px;
+  }
+  nav .right {
+    margin: 30px 40px 30px 0px;
+  }
+  nav .left {
+    margin: 30px 0 30px 40px;
+    visibility: visible;
+    opacity: 1;
+  }
+  nav .left ul:hover {
+    visibility: visible;
+    opacity: 1;
+  }
+  nav .left ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 10px;
+    transition: all 0.3s ease-in;
+  }
+  nav .left ul li:hover {
+    transform: translate(2px, 5px);
+  }
+  nav .left ul li:first-child {
+    margin-left: 0;
+  }
+  nav .left ul li:last-child {
+    margin-right: 0;
+  }
+  nav .left ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+  }
+  nav .left i {
+    display: none;
+  }
+  nav .right {
+    margin: 30px 40px 30px 0px;
+  }
+  nav .right a {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: inline-block;
+    line-height: 40px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin: 0 10px;
+    transition: all 0.5s ease-out;
+  }
+  nav .right a:hover {
+    transform: rotate(360deg);
+  }
+  nav .right a:nth-child(1) {
+    background-color: #3b5998;
+  }
+  nav .right a:nth-child(2) {
+    background-color: #00aced;
+  }
+  nav .right a:nth-child(3) {
+    background-color: #0077b5;
+  }
+  header {
+    background: url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    box-sizing: border-box;
+    padding-top: 180px;
+    padding-left: 70px;
+  }
+  header h1,
+  header h2,
+  header h2 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+  header h1 {
+    font-size: 50px;
+  }
+  header h2 {
+    font-size: 30px;
+  }
+  header h2:nth-child(2) {
+    margin-left: 100px;
+  }
+  section {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#071928+0,092332+100 */
+    background: #071928;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #071928 0%, #092332 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #071928 0%, #092332 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #071928 0%, #092332 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#071928', endColorstr='#092332', GradientType=0);
+    /* IE6-9 */
+    padding: 90px;
+  }
+  section.paginas div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+  }
+  section.paginas div article.pagina {
+    width: 40%;
+    margin-bottom: 50px;
+  }
+  section.paginas div article.pagina img {
+    width: 100%;
+  }
+  section.paginas div article.pagina p {
+    text-align: left;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  section.contacto {
+    padding: 150px 0 150px 150px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+  }
+  section.contacto h2 {
+    font-size: 40px;
+  }
+  section.contacto h3 {
+    margin: 10px 0;
+    font-size: 20px;
+  }
+  section.contacto .form-contacto {
+    margin-top: 40px;
+  }
+  section.contacto .form-contacto * {
+    margin: 15px 0;
+  }
+  section.contacto .form-contacto form {
+    width: 550px;
+  }
+  section.contacto .form-contacto form * {
+    display: block;
+  }
+  section.contacto .form-contacto form input[type="text"],
+  section.contacto .form-contacto form textarea {
+    width: 100%;
+    font-size: 25px;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  section.contacto .form-contacto form input[type="text"] {
+    height: 40px;
+  }
+  section.contacto .form-contacto form input[type="submit"] {
+    background-color: #124867;
+    border: 1px solid black;
+    width: 150px;
+    padding: 10px;
+    font-size: 20px;
+  }
+  footer {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#061620+0,2b3b44+100 */
+    background: #061620;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #061620 0%, #2b3b44 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #061620 0%, #2b3b44 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #061620 0%, #2b3b44 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#061620', endColorstr='#2b3b44', GradientType=1);
+    /* IE6-9 */
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  footer p {
+    margin-right: 50px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 100px;
+  }
+}
